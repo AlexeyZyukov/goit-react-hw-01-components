@@ -1,9 +1,9 @@
 {
-  "name": "goit-react-hw-01",
+  "name": "goit-react-hw-template",
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
-  "homepage": "https://alexeyzyukov.github.io/goit-react-hw-01/",
+  "homepage": "https://alexeyzyukov.github.io/goit-react-hw-template/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexeyZyukov/goit-react-hw-01.git"
+    "url": "git+https://github.com/AlexeyZyukov/goit-react-hw-template.git"
   },
   "scripts": {
     "start": "react-scripts start",
