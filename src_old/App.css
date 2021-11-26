@@ -1,38 +1,4 @@
-html {
-  box-sizing: border-box;
-}
-
-/* * {
-  outline: 1px solid #ee3131;
-} */
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-p,
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-.root {
-  padding-left: 200px;
-  padding-right: 200px;
-  background-color: blue;
-}
-
-/* .stats-block-info {
-} */
-
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -69,4 +35,4 @@ li {
   to {
     transform: rotate(360deg);
   }
-} */
+}
