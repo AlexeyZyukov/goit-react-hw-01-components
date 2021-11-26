@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
-  "homepage": "https://alexeyzyukov.github.io/goit-react-hw-template/",
+  "homepage": "https://alexeyzyukov.github.io/goit-react-hw-template",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
