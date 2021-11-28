@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import "./profile.css";
+import PropTypes from 'prop-types';
+import './profile.css';
 /*здесь содержится только разметка компонента. Никакие данные сюда не передаются*/
 export default function Profile({
   key,
@@ -41,13 +41,13 @@ export default function Profile({
 }
 
 Profile.defaultProps = {
-  username: "unknown user",
-  tag: "no tag",
-  location: "no location",
-  avatar: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
-  followers: "0",
-  views: "0",
-  likes: "0",
+  username: 'unknown user',
+  tag: 'no tag',
+  location: 'no location',
+  avatar: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
+  followers: '0',
+  views: '0',
+  likes: '0',
 };
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
@@ -59,32 +59,32 @@ Profile.propTypes = {
   views: PropTypes.number.isRequired,
   likes: PropTypes.number.isRequired,
 };
-// const profile = (
-//     <div className="profile">
-//         <div className="description">
-//             <img
-//                 src={user.avatar}
-//                 alt={user.tag}
-//                 className="avatar"
-//             />
-//             <p className="name">{user.username}</p>
-//             <p className="tag">{user.tag}</p>
-//             <p className="location">{user.location}</p>
-//         </div>
+/* const profile = (
+    <div className="profile">
+        <div className="description">
+            <img
+                src={user.avatar}
+                alt={user.tag}
+                className="avatar"
+            />
+            <p className="name">{user.username}</p>
+            <p className="tag">{user.tag}</p>
+            <p className="location">{user.location}</p>
+        </div>
 
-//         <ul className="stats">
-//             <li>
-//                 <span className="label">Followers: </span>
-//                 <span className="quantity">{user.stats.followers}</span>
-//             </li>
-//             <li>
-//                 <span className="label">Views: </span>
-//                 <span className="quantity">{user.stats.views}</span>
-//             </li>
-//             <li>
-//                 <span className="label">Likes: </span>
-//                 <span className="quantity">{user.stats.likes}</span>
-//             </li>
-//         </ul>
-//     </div>
-// );
+        <ul className="stats">
+            <li>
+                <span className="label">Followers: </span>
+                <span className="quantity">{user.stats.followers}</span>
+            </li>
+            <li>
+                <span className="label">Views: </span>
+                <span className="quantity">{user.stats.views}</span>
+            </li>
+            <li>
+                <span className="label">Likes: </span>
+                <span className="quantity">{user.stats.likes}</span>
+            </li>
+        </ul>
+    </div>
+);*/
