@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexeyZyukov/goit-react-hw-01-components.git"
+    "url": "git+https://github.com/alexeyzyukov/goit-react-hw-01-components.git"
   },
   "scripts": {
     "start": "react-scripts start",
