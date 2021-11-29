@@ -1,0 +1,22 @@
+.friends-section {
+  margin: 20px auto;
+  width: fit-content;
+}
+.friends-item {
+  display: flex;
+  align-items: center;
+}
+
+.statusOnline {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(42, 160, 42);
+  border-radius: 50%;
+}
+
+.statusOffline {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(255, 66, 66);
+  border-radius: 50%;
+}

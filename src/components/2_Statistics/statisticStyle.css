@@ -1,7 +1,7 @@
 .statistic {
   width: fit-content;
-  margin: auto;
-  padding-top: 10px;
+  margin: 20px auto;
+  padding-top: 5px;
   background-color: #f6f8f4;
 }
 
@@ -11,19 +11,25 @@
 
 .stat-list {
   padding: 10px;
-  font-size: 40px;
-  font-weight: 700;
+
   border: 1px solid black;
 }
 
 .stat-item {
   display: flex;
   flex-direction: column;
-
+  padding: 10px;
   list-style-type: none;
   text-align: center;
 }
-
+.stat-label {
+  font-size: 20px;
+  font-weight: 500;
+}
+.stat-percentage {
+  font-size: 30px;
+  font-weight: 500;
+}
 .stat-header {
   text-align: center;
   font-size: 60px;

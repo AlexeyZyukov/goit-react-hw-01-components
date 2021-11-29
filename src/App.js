@@ -14,7 +14,7 @@ function App() {
   return (
     <Section title="Section of items" className="section user-profile">
       <Profile props={user} />
-      <StatisticsList title="Statistic" stats={data} />
+      <StatisticsList title="Upload stats" stats={data} />
       <FriendsList props={friendsData} />
       <TransactionHistory props={transactions} />
     </Section>

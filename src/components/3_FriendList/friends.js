@@ -1,10 +1,19 @@
 import PropTypes from 'prop-types';
+import friendsStyle from './friendsStyle.css';
 
 export default function Friends({ isOnline, avatar, name }) {
+  console.log(isOnline);
+  console.log(name);
+
   return (
-    <li className="item">
-      <span class="status">{isOnline}</span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
+    <li className="friends-item">
+      <span className={isOnline}></span>
+      <img
+        className="friends-avatar"
+        src={avatar}
+        alt="User avatar"
+        width="150"
+      />
       <p className="name">{name}</p>
     </li>
   );
