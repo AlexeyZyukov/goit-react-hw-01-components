@@ -1,14 +1,19 @@
 import PropTypes from 'prop-types';
 import Statistic from './Statistic.js';
 
-function StatisticsList({ items }) {
+function StatisticsList({ title, items }) {
   return (
     <div className="statistic">
-      {items.map(item => (
-        <ul key={item.id}>
-          <Statistic label={item.label} percentage={item.percentage} />
-        </ul>
-      ))}
+      {title && <h2>{title}</h2>}
+      <ul>
+        {items.map(item => (
+          <Statistic
+            key={item.id}
+            label={item.label}
+            percentage={item.percentage}
+          />
+        ))}
+      </ul>
     </div>
   );
 }
