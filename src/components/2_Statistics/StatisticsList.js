@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import Statistic from './Statistic.js';
 
-function StatisticsList({ title, items }) {
+function StatisticsList({ title, stats }) {
   return (
     <div className="statistic">
-      {title && <h2>{title}</h2>}
-      <ul>
-        {items.map(item => (
+      {title && <h2 className="stat-header">{title}</h2>}
+      <ul className="stat-element">
+        {stats.map(item => (
           <Statistic
             key={item.id}
             label={item.label}

@@ -14,14 +14,11 @@ function App() {
   return (
     <Section title="Section of items" className="section user-profile">
       <Profile props={user} />
-      <StatisticsList title="Statistic" items={data} />
+      <StatisticsList title="Statistic" stats={data} />
       <FriendsList props={friendsData} />
       <TransactionHistory props={transactions} />
     </Section>
   );
 }
-/* <Section title="Statistic">
-      <StatisticsList
-        items={data} />
-    </Section>*/
+
 export default App;
