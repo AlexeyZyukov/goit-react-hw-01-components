@@ -7,6 +7,8 @@ import StatisticsList from './components/2_Statistics/StatisticsList';
 import data from './components/2_Statistics/data.json';
 import FriendsList from './components/3_FriendList/FriendsList';
 import friendsData from './components/3_FriendList/friendsData';
+import TransactionHistory from './components/4_TransactionHistory/TransactionHistoy';
+import transactions from './components/4_TransactionHistory/transactions.json';
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <Profile props={user} />
       <StatisticsList items={data} />
       <FriendsList props={friendsData} />
+      <TransactionHistory props={transactions} />
     </Section>
   );
 }
