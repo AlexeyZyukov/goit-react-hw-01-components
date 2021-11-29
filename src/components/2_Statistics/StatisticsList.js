@@ -3,7 +3,7 @@ import Statistic from './statistic.js';
 
 function StatisticsList({ items }) {
   return (
-    <div>
+    <div className="statistic">
       {items.map(item => (
         <ul key={item.id}>
           <Statistic label={item.label} percentage={item.percentage} />

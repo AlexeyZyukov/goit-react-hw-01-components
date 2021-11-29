@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 
-export default function Statistic({ id, label, percentage }) {
+export default function Statistic({ label, percentage }) {
   return (
-    <ul class="stat-list">
-      <li class="item" id="{id}">
-        <span class="label">{label}</span>
-        <span class="percentage">{percentage}</span>
+    <ul className="stat-list">
+      <li className="item" id="{id}">
+        <span className="label">{label}</span>
+        <span className="percentage">{percentage}</span>
       </li>
     </ul>
   );
