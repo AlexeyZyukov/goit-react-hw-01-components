@@ -1,17 +1,9 @@
 import PropTypes from 'prop-types';
 import './profile.css';
 /*здесь содержится только разметка компонента. Никакие данные сюда не передаются*/
-export default function Profile({
-  key,
-  username,
-  tag,
-  location,
-  avatar,
-  followers,
-  views,
-  likes,
-}) {
-  /* const { username, tag, location, avatar, followers, views, likes } = props //деструктуризация props */
+export default function Profile({ props }) {
+  const { key, username, tag, location, avatar, followers, views, likes } =
+    props; //деструктуризация props
   return (
     <div className="profile">
       {key}
