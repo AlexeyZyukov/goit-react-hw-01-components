@@ -2,30 +2,32 @@ import PropTypes from 'prop-types';
 import './profile.css';
 /*здесь содержится только разметка компонента. Никакие данные сюда не передаются*/
 export default function Profile({ props }) {
-  const { key, username, tag, location, avatar, followers, views, likes } =
-    props; //деструктуризация props
+  // const { key, username, tag, location, avatar, followers, views, likes } =
+  //   props;
   return (
     <div className="profile">
-      {key}
+      {props.key}
       <div className="description">
-        <img src={avatar} alt={tag} className="avatar" />
-        <p className="name profile-info">{username}</p>
-        <p className="tag profile-info">@{tag}</p>
-        <p className="location profile-info">{location}</p>
+        <img src={props.avatar} alt={props.tag} className="avatar" />
+        <p className="name profile-info">{props.username}</p>
+        <p className="tag profile-info">@{props.tag}</p>
+        <p className="location profile-info">{props.location}</p>
       </div>
 
       <ul className="stats">
         <li className="stats-block">
           <span className="label stats-block-info">Followers: </span>
-          <span className="quantity stats-block-info">{followers}</span>
+          <span className="quantity stats-block-info">
+            {props.stats.followers}
+          </span>
         </li>
         <li className="stats-block">
           <span className="label stats-block-info">Views: </span>
-          <span className="quantity stats-block-info">{views}</span>
+          <span className="quantity stats-block-info">{props.stats.views}</span>
         </li>
         <li className="stats-block">
           <span className="label stats-block-info">Likes: </span>
-          <span className="quantity stats-block-info">{likes}</span>
+          <span className="quantity stats-block-info">{props.stats.likes}</span>
         </li>
       </ul>
     </div>
@@ -38,6 +40,7 @@ Profile.defaultProps = {
 };
 
 Profile.propTypes = {
+  key: PropTypes.number,
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
