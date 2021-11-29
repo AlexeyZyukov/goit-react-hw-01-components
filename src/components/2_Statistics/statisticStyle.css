@@ -1,0 +1,30 @@
+.statistic {
+  width: fit-content;
+  margin: auto;
+  padding-top: 10px;
+  background-color: #f6f8f4;
+}
+
+.stat-element {
+  display: flex;
+}
+
+.stat-list {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  border: 1px solid black;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+
+  list-style-type: none;
+  text-align: center;
+}
+
+.stat-header {
+  text-align: center;
+  font-size: 60px;
+}

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Statistic from './Statistic.js';
+import statisticStyle from './statisticStyle.css';
 
 function StatisticsList({ title, stats }) {
   return (

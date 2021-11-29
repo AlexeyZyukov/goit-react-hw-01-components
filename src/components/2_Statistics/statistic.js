@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 export default function Statistic({ label, percentage }) {
   return (
     <ul className="stat-list">
-      <li className="item" id="{id}">
-        <span className="label">{label}</span>
-        <span className="percentage">{percentage}</span>
+      <li className="stat-item" id="{id}">
+        <span className="stat-label">{label}</span>
+        <span className="stat-percentage">{percentage}</span>
       </li>
     </ul>
   );
