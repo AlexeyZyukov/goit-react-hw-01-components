@@ -3,6 +3,10 @@ import TableHead from './TableHead';
 import TableBody from './TableBody';
 
 export default function TransactionHistory({ props }) {
+  return props.length > 0 && createTable(props);
+}
+
+function createTable(props) {
   return (
     <table class="transaction-history">
       <TableHead />
