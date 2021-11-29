@@ -19,6 +19,7 @@ function StatisticsList({ title, items }) {
 }
 
 StatisticsList.propTypes = {
+  title: PropTypes.string,
   key: PropTypes.number,
   label: PropTypes.string,
   percentage: PropTypes.number,
