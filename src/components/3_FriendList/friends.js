@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import friendsStyle from './friendsStyle.module.css';
 
 export default function Friends({ isOnline, avatar, name }) {
-  console.log(isOnline);
   console.log(name);
+  console.log(isOnline);
 
   return (
     <li className={friendsStyle.friendsItem}>
