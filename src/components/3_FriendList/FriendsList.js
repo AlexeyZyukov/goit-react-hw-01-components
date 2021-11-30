@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
 import Friends from './Friends.js';
+import friendsStyle from './friendsStyle.module.css';
 
 export default function FriendsList({ props }) {
   console.log(props);
-  //test1
   return (
-    <ul className="friends-section">
+    <ul className={friendsStyle.friendsSection}>
       {props.map(prop => (
-        <ul className="friends-card" key={prop.id}>
+        <ul className={friendsStyle.friendsCard}>
           <Friends
+            key={prop.id}
             status={prop.isOnline}
             avatar={prop.avatar}
             name={prop.name}

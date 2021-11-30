@@ -6,14 +6,14 @@ export default function Friends({ isOnline, avatar, name }) {
   console.log(name);
 
   return (
-    <li className="friends-item">
+    <li className={friendsStyle.friendsItem}>
       <span
         className={
-          isOnline ? friendsStyle.statusOnline : friendsStyle.statusOffline
+          { isOnline } ? friendsStyle.statusOnline : friendsStyle.statusOffline
         }
       ></span>
       <img
-        className="friends-avatar"
+        className={friendsStyle.friendsAvatar}
         src={avatar}
         alt="User avatar"
         width="150"
