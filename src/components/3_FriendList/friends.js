@@ -1,15 +1,12 @@
 import PropTypes from 'prop-types';
 import friendsStyle from './friendsStyle.module.css';
 
-export default function Friends({ isOnline, avatar, name }) {
-  console.log(name);
-  console.log(isOnline);
-
+export default function Friends({ status, avatar, name }) {
   return (
     <li className={friendsStyle.friendsItem}>
       <span
         className={
-          { isOnline } ? friendsStyle.statusOnline : friendsStyle.statusOffline
+          status ? friendsStyle.statusOnline : friendsStyle.statusOffline
         }
       ></span>
       <img
@@ -24,7 +21,7 @@ export default function Friends({ isOnline, avatar, name }) {
 }
 
 Friends.propTypes = {
-  isOnline: PropTypes.bool.isRequired,
+  status: PropTypes.bool.isRequired,
   avatar: PropTypes.string,
   name: PropTypes.string,
 };

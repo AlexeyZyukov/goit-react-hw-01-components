@@ -3,7 +3,6 @@ import Friends from './Friends.js';
 import friendsStyle from './friendsStyle.module.css';
 
 export default function FriendsList({ props }) {
-  console.log(props);
   return (
     <ul className={friendsStyle.friendsSection}>
       {props.map(prop => (
