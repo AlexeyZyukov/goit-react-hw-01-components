@@ -3,6 +3,7 @@
   margin: 20px auto;
   padding-top: 5px;
   background-color: #f6f8f4;
+  box-shadow: 2px 2px 1px 0px #7c7c7c;
 }
 
 .stat-element {
@@ -11,8 +12,12 @@
 
 .stat-list {
   padding: 10px;
-
   border: 1px solid black;
+  background-color: burlywood;
+}
+
+.stat-list:nth-of-type(2n) {
+  background-color: rgb(218, 187, 247);
 }
 
 .stat-item {
