@@ -14,12 +14,12 @@ function App() {
   return (
     // eslint-disable-next-line react/jsx-no-undef
     <>
-      <Section title="Section of items" className="section">
+      <Section>
         <Profile props={user} />
         <StatisticsList title="Upload stats" stats={data} />
         <FriendsList props={friendsData} />
       </Section>
-      <Section className="section">
+      <Section>
         <TransactionHistory props={transactions} />
       </Section>
     </>
