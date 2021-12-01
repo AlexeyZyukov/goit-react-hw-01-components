@@ -1,4 +1,4 @@
-import styles from './transaction.module.css';
+// import styles from './transaction.module.css';
 export default function TableHead() {
   return (
     <thead>
