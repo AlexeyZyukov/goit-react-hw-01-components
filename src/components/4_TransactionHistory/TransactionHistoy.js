@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+
+import styles from './transaction.module.css';
 import TableHead from './TableHead';
 import TableBody from './TableBody';
 
@@ -8,7 +10,7 @@ export default function TransactionHistory({ props }) {
 
 function createTable(props) {
   return (
-    <table class="transaction-history">
+    <table class={styles.transactionHistory}>
       <TableHead />
       {props.map(prop => (
         <TableBody
