@@ -1,21 +1,24 @@
 import PropTypes from 'prop-types';
-import Friends from './Friends.js';
+import { Fragment } from 'react';
+import Friends from './Friends';
 import friendsStyle from './friendsStyle.module.css';
 
 export default function FriendsList({ props }) {
   return (
-    <ul className={friendsStyle.friendsSection}>
-      {props.map(prop => (
-        <ul className={friendsStyle.friendsCard}>
-          <Friends
-            key={prop.id}
-            status={prop.isOnline}
-            avatar={prop.avatar}
-            name={prop.name}
-          />
-        </ul>
-      ))}
-    </ul>
+    <div className={friendsStyle.friendsSection}>
+      <ul>
+        {props.map(prop => (
+          <Fragment>
+            <Friends
+              key={prop.id}
+              status={prop.isOnline}
+              avatar={prop.avatar}
+              name={prop.name}
+            />
+          </Fragment>
+        ))}
+      </ul>
+    </div>
   );
 }
 
