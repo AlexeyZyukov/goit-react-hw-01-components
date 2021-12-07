@@ -8,14 +8,14 @@ export default function FriendsList({ props }) {
     <div className={friendsStyle.friendsSection}>
       <ul>
         {props.map(prop => (
-          <Fragment>
-            <Friends
-              key={prop.id}
-              status={prop.isOnline}
-              avatar={prop.avatar}
-              name={prop.name}
-            />
-          </Fragment>
+          // <Fragment>
+          <Friends
+            key={prop.id}
+            status={prop.isOnline}
+            avatar={prop.avatar}
+            name={prop.name}
+          />
+          // </Fragment>
         ))}
       </ul>
     </div>
